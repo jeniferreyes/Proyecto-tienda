@@ -5,3 +5,4 @@ const botonVaciar = document.querySelector('#vaciar-carrito')
 
 let elementosCarrito = [];
 
+
