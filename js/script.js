@@ -4,5 +4,11 @@ const contenedor = document.querySelector('#articulos-carrito tbody');
 const botonVaciar = document.querySelector('#vaciar-carrito')
 
 let elementosCarrito = [];
+cargarEventos();
 
+function cargarEventos(){
+    listaProductos.addEventListener('click', agregarProducto)
+
+    carrito.addEventListener('click', )
+}
 

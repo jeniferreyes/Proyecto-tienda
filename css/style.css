@@ -26,6 +26,7 @@ body {
     
     
 }
+/* Barra de navegacion y menu */
 .menu{
     position: absolute;
     top: 0;
@@ -45,16 +46,16 @@ body {
     font-size: 18px;
     padding: 20px;
     font-weight: 600;
-    color: blue;
+    color: rgb(54, 48, 98);
     display: block;
 }
 .menu .navbar ul li a:hover{
-    color: red;
+    color: rgb(130, 115, 151);
 }
 
 .logo{
     font-size: 25px;
-    color: red;
+    color: rgb(172, 177, 214);
     text-transform: uppercase;
     font-weight: 800;
 }
@@ -76,6 +77,7 @@ body {
     cursor: pointer;
     display: none;
 }
+/* Carrito de compras */
 .carrito-compras{
     position: relative;
 }
@@ -86,29 +88,31 @@ body {
     display: block;
     position: absolute;
     right: 0;
-    backdrop-filter: blur(10px);
     top: 100%;
     z-index: 1;
-    background-color: red;
     padding: 20px;
     min-width: 400px;
-    box-shadow: 0px 0px 20px gray;
+    background-color: rgba(219, 223, 234, 0.211);
+    backdrop-filter: blur(8px);
+    border-radius: 16px;
+    box-shadow: 2px 2px 10px rgba(128, 128, 128, 0.568);
 }
 table{
     width: 100%;
 }
 th, td{
-    color: gray;
+    color: rgb(130, 148, 196);
 
 }
 .borrar{
-    background-color: red;
+    background-color: pink;
     border-radius: 50%;
     padding: 5px 10px;
     text-decoration: none;
     color: gray;
     font-weight: 800;
 }
+/* header y fondo */
 .fondo{
     position: absolute;
     width: 700px;
@@ -133,30 +137,16 @@ th, td{
 .texto-header h1{
     font-size: 55px;
     line-height: 65px;
-    color: black;
+    color: rgb(54, 48, 98);
     margin-bottom: 35px;
 }
 .texto-header span{
-    color: pink;
+    color: rgb(130, 148, 196);
 }
 .texto-header p{
     font-style: 16px;
-    color: blue;
+    color: rgb(31, 30, 41);
     margin-bottom: 45px;
-}
-.boton-1{
-    display: inline-block;
-    padding: 13px 45px;
-    border-radius: 25px;
-    color: red;
-    background-color: purple;
-    font-size: 16px;
-    color: white;
-    text-transform: capitalize;
-    box-shadow: 0px 0px 20px gray;
-}
-.boton-1:hover{
-    background-color: red;
 }
 .imagen-header{
     width: 50%;
@@ -164,6 +154,21 @@ th, td{
 }
 .header-imagen img{
     width: 650px;
+}
+/*  */
+.boton-1{
+    display: inline-block;
+    padding: 13px 45px;
+    border-radius: 25px;
+    background-color: rgb(130, 115, 151);
+    font-size: 16px;
+    color: white;
+    text-transform: capitalize;
+    box-shadow: 0px 0px 20px gray;
+}
+.boton-1:hover{
+    background-color: rgb(233, 213, 202);
+    color: rgb(121, 79, 121);
 }
 
 
@@ -184,6 +189,7 @@ th, td{
 }
 
 .product-item {
+    
     border-top: 1px solid rgb(219, 138, 138);
     width: 300px;
     margin: 20px;
@@ -191,6 +197,7 @@ th, td{
     background-color: #fff;
     border-radius: 15px;
     box-shadow: 1px 1px 5px rgba(38, 38, 38, 0.23);
+    
 }
 
 .product-item img {
@@ -242,7 +249,11 @@ font-size: 24px;
 .cart span {
 font-size: 24px;
 }
-
+.description-prod .price{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(77, 76, 125);
+}
 /* Sección de inicio de sesión */
 .login {
 padding: 80px 0;
