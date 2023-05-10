@@ -72,35 +72,6 @@ body {
     cursor: pointer;
     display: none;
 }
-@media (max-width:991px) {
-    .menu{
-        padding: 30px;
-    }
-    .menu label{
-        display: initial;
-    }
-    .back{
-        padding: 45px 0;
-    }
-    .menu .navbar{
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background-color: rgba(77, 76, 125, 0.206);
-        backdrop-filter: blur(10px);
-        box-shadow: 2px 2px 10px gray;
-        border-radius: 20px;
-        display: none;
-        
-    }
-    .menu .navbar ul li{
-        width: 100%;
-    }
-    #menu:checked ~ .navbar{
-        display: initial;
-    }
-}
 
 .img-carrito{
     width: 20px;
@@ -123,10 +94,9 @@ body {
     z-index: 1;
     padding: 20px;
     min-width: 400px;
-    background-color: rgba(219, 223, 234, 0.211);
+    background-color: rgba(114, 136, 196, 0.144);
     backdrop-filter: blur(8px);
     border-radius: 16px;
-    box-shadow: 2px 2px 10px rgba(128, 128, 128, 0.568);
 }
 table{
     width: 100%;
@@ -153,6 +123,7 @@ th, td{
     
 }
 .contenido-header{
+    padding: 150px 0px 100px 0;
     display: flex;
     align-items: center;
 
@@ -160,9 +131,7 @@ th, td{
 
 .texto-header{
     width: 50%;
-    /* ... */
     margin-right: 70px;
-    margin-top: 12%;
    
 }
 .texto-header h1{
@@ -179,15 +148,67 @@ th, td{
     color: rgb(31, 30, 41);
     margin-bottom: 45px;
 }
-.imagen-header{
-    width: 700px;
-    text-align: right;
-    
+
+
+/* Menú */
+@media (max-width:990px) {
+    .menu{
+        padding: 30px;
+    }
+    .menu label{
+        display: initial;
+    }
+    .back{
+        padding: 45px 0;
+    }
+    .imagen-header{
+        width: 70%;
+    }
+    .imagen-header img{
+
+        flex-direction: column;
+        text-align: right;
+    }
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: rgba(77, 76, 125, 0.206);
+        backdrop-filter: blur(10px);
+        box-shadow: 2px 2px 10px gray;
+        border-radius: 20px;
+        display: none;
+        
+    }
+    .menu .navbar ul li{
+        width: 100%;
+    }
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+    .texto-header{
+        width: 100%;
+    }
+    .texto-header h1{
+        font-size: 40px;
+    }
+    .contenido-header{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        padding: 150px 0px 100px 60px;
+    }
+    .imagen-header{
+        width: 100%;
+    }
+    .imagen-header img{
+        width: 250px;
+        
+    }
 }
-.header-imagen img{
-    width: 650px;
-}
-/*  */
+
 .boton-1{
     display: inline-block;
     padding: 13px 45px;
@@ -249,7 +270,7 @@ margin-bottom: 20px;
 }
 
 /* boton agregar al carrito */
-.product-item button {
+.product-item a {
     background-color: #f00;
     color: #fff;
     border: none;
