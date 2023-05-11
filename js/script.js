@@ -65,7 +65,6 @@ function eliminarProducto(e){
 }
 function vaciarCarrito() {
 
-    contenedorCarrito.innerHTML = ' ';
     while (contenedorCarrito.firstChild) {
         contenedorCarrito.removeChild(contenedorCarrito.firstChild);
     }
@@ -95,7 +94,7 @@ function carritoHTML() {
         </td>
 
         <td>
-            <a href="#" class="borrar-prod" data-id="${producto.id}">Elimiar</a>
+        <a href="#" class="borrar-prod" data-id="${producto.id}">x</a>
         </td>
         `
         contenedorCarrito.appendChild(nuevoProd);

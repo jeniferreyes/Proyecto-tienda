@@ -23,9 +23,11 @@ body {
 }
 .header{
     display: flex;
+    justify-content: space-between;
     align-items: center;
     min-height: 70vh;
     position: relative;
+    padding: 0 50px;
 }
 /* Barra de navegacion y menu */
 .menu{
@@ -98,6 +100,16 @@ body {
     backdrop-filter: blur(8px);
     border-radius: 16px;
 }
+.carrito-compras:hover #carrito img{
+    width: 40%;
+}
+/* boton en js */
+.borrar-prod {
+    width: 40px;
+    cursor: pointer;
+}
+
+
 table{
     width: 100%;
 }
