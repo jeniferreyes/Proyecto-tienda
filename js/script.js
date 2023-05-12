@@ -101,24 +101,3 @@ function vaciarCarrito() {
     return false;
 }
 
-// DARK MODE HTML 
-const dmSwitch = document.querySelector('#switchDM');
-dmSwitch.addEventListener('click', function(){
-    // el toggle pone o quita una clase
-    document.body.classList.toggle('dark');
-    dmSwitch.classList.toggle('active')
-    if (document.body.classList.contains('dark')) {
-        localStorage.setItem('modo-oscuro', 'true') //modo-oscuro es el nombre del almacenamiento
-    }else{
-        localStorage.setItem('modo-oscuro', 'false')
-    }
-
-});
-
-if(localStorage.getItem('modo-oscuro') === 'true'){
-    document.body.classList.add('dark');
-    boton.classList.add('active')
-}else{
-    document.body.classList.remove('dark');
-    boton.classList.remove('active')
-}

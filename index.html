@@ -6,6 +6,7 @@
     <title>Tienda en línea</title>
     <link rel="stylesheet" href="css/style.css">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/darkMode.css">
 </head>
 <body>
     <span>
@@ -27,9 +28,11 @@
                     <li><a href="login.html" target="_blank">Login</a></li>
                     <li><a href="#">Contacto</a></li>
                     <li>
-                        <button class="switchDM active" id="switchDM">
+                        <button class="switchDark active" id="boton">
                             <span><i class='bx bx-sun' ></i></span>
                             <span><i class='bx bx-moon' ></i></span>
+                        </button>
+                        
                     </li>
                     </ul>
                 </nav>
@@ -210,25 +213,23 @@
 
     <!-- Sección de sugerencias -->
     <section class="suggestions">
-        <div class="container">
-        <h2>Envíanos tus sugerencias</h2>
-        <form action="mailto:tienda@mail.com"  method="post" style="text-align: justify ;" enctype="text/plain">
-            <div class="form-group">
-                <label for="name">Nombre completo</label>
-                <input type="text" id="name" name="name" required>
+        <form action="">
+            <h2>Sugerencias</h2>
+            <span class="linea"></span>
+
+            <div class="input-group">
+                <label for="nombre" class="sug">Nombre</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+
+                <label for="emial">Email</label>
+                <input  class="sug" type="email" name="email" id="email" placeholder="Email" required>
+
+                <label for="mensaje">Mensaje</label>
+                <textarea class="sug" class="txt-area" name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+
+                <input class="btn" type="submit" name="enviar" id="enviar" value="Enviar">
             </div>
-            <div class="form-group">
-                <label for="email">Correo electrónico</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="message">Mensaje</label>
-                <textarea id="message" name="message" required></textarea>
-            </div>
-            <button type="submit">Enviar</button>
         </form>
-    </div>
-    </div>
 </section>
 
 <!-- Sección de pie de página -->
@@ -238,5 +239,6 @@
     </div>
 </footer>
 <script src="./js/script.js"></script>
+<script src="./js/modo-oscuro.js"></script>
 </body>
 </html>
