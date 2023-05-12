@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/registrostyle.css">
+    <title>Registro</title>
+</head>
+<body>
+    <div class="contenido">
+        <div class="info-contenido">
+            <h2 class="texto-login">Registro</h2>
+            <div class="cont-formualrio">
+                <form id="registroForm">
+                    <!---<label for="nombre">Nombre:</label>-->
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre" class="input" required>
+                    <br>
+                    <br>
+                    <!--<label for="correo">Correo:</label>-->
+                    <input type="email" name="correo" id="correo" placeholder="Correo electronico" class="input" required>
+                    <br>
+                    <br>
+                    <!--<label for="contraseña">Contraseña:</label>-->
+                    <input type="password" name="contraseña" id="contraseña" placeholder="Contraseña" class="input" required>
+                    <br>
+                    <br>
+                    <input type="checkbox" name="terminos" id="terminos" class="checkbox">
+                    <label for="terminos" class="checkbox">Acepto los <a href="#"> terminos y condiciones</a></label>
+                    <br>
+                    <br>
+                    <input type="submit" value="Enviar" class="benvio">
+                </form>
+            </div>
+        </div>
+        <div class="boton-regresar">
+            <a href="index.html">Inicio</a>
+        </div>
+    </div>
+    <script src="./js/registro.js"></script>
+</body>
+</html>

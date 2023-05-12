@@ -161,7 +161,6 @@ th, td{
     margin-bottom: 45px;
 }
 
-
 /* Menú */
 @media (max-width:990px) {
     .menu{
@@ -174,12 +173,12 @@ th, td{
         padding: 45px 0;
     }
     .imagen-header{
-        width: 70%;
+        width: 100%;
+        text-align: right;
     }
     .imagen-header img{
-
-        flex-direction: column;
-        text-align: right;
+        width: 100%;
+        height: auto;
     }
     .menu .navbar{
         position: absolute;
@@ -216,11 +215,20 @@ th, td{
         width: 100%;
     }
     .imagen-header img{
-        width: 250px;
+        width: 100%;
+        height: auto;
         
     }
 }
 
+.imagen-header{
+    right: 0;
+    width: 100%;
+}
+.imagen-header img{
+    width: 100%;
+    text-align: right;
+}
 .boton-1{
     display: inline-block;
     padding: 13px 45px;
