@@ -9,10 +9,10 @@ loginform.addEventListener('submit', (e)=>{
     function recargar(){
         window.location.href = window.location.href;
     }
-    const alertaLogin = document.querySelector('#div-alerta');
+    
     if(!validacion){
         const alerta = document.createElement('span');
-
+        const alertaLogin = document.querySelector('#div-alerta');
         alerta.textContent = 'Usuario o contraseñas incorrectos';
         alertaLogin.appendChild(alerta);
 
@@ -23,12 +23,13 @@ loginform.addEventListener('submit', (e)=>{
         
         return alertaLogin;
     }
+    const divSaludo = document.querySelector('#div-saludo')
     const saludo = document.createElement('span');
     saludo.textContent = `Hola de vuelta ${validacion.nombre}`;
-    alertaLogin.appendChild(saludo);
+    divSaludo.appendChild(saludo);
     setTimeout(() => {
-        alertaLogin.remove()
-        window.location.href='index.html'
+        saludo.remove()
+        window.location.href='index.html';
 
     },2000)
 

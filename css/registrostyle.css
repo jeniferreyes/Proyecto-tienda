@@ -118,6 +118,20 @@ a{
    
 }
 
+#alerta-registro{
+    max-width: 600px;
+    width: 100%;
+}
+
+#alerta-saludo span{
+    text-align: center;
+    background-color: rgb(146, 196, 105);
+    border-radius: 18px;
+    padding: 15px;
+    color: rgb(56, 82, 41);
+    font-weight: bold;
+}
+
 /*@media screen and (max-width: 1000px) {
     .info-contenido {
         width: 70%;

@@ -100,3 +100,5 @@ function vaciarCarrito() {
     }
     return false;
 }
+
+// DARK MODE HTML 
