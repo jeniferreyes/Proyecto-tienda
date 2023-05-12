@@ -2,22 +2,13 @@ body {
     font-family: 'Didact Gothic', sans-serif;
     height: 83.8vh;
     background-image: linear-gradient(to top, #ffffff 0%, #ffffff 100%);
-    /*background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);*/
+    list-style: none;
 }
-/*
-.contenido {
-    height: 900px;
-    width: 900px;
-    margin: 100px auto;
-    border-radius: 10px;
-    display: flex;
-    justify-content: space-between;
-    background-color:rgb(241, 241, 241); imagen
-    overflow: hidden;
+ul, li{
+    list-style: none;
 }
-*/
 .info-contenido{
-    margin: 100px auto;
+    margin: 70px auto;
     width: 400px;
     height: 470px;
     display: flex;
@@ -86,6 +77,158 @@ p, a, .checkbox{
 a{
     color: black;
 }
+
+/*modo oscuro boton*/
+.switchDark{
+    background-color: #000000;
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    border: none;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+.switchDark span{
+    width: 20px;
+    height: 22px;
+    line-height: 30px;
+    display: block;
+    color: #f2f1f1;
+}
+.switchDark::after{
+    display: block;
+    background: #fffbf5;
+    width: 23px;
+    height: 23px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: unset;
+    border-radius: 100px;
+
+    box-shadow: 0 0 1.5px 1.5px rgba(0, 0, 0, .5);
+    content: "";
+}
+.switchDark.active{
+    background: #525252;
+}
+.switchDark.active::after{
+    left: unset;
+    right: 0;
+}
+/*----------------------Modo oscuro---------------------------*/
+body.dark{
+    background: #111111e9;
+    color: #0c0c0c;
+}
+.dark .info-contenido{
+    background:none ;
+    margin: 80px auto;
+    width: 400px;
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    text-align: center
+}
+.dark .texto-login {
+    font-size: 34px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color:white;
+    text-decoration:underline solid rgba(240, 239, 240, 0.746);
+    text-underline-offset:8px;
+}
+.dark .input, .benvio {
+    width: 90%;
+    height: 50px;
+    font-size: 15px;
+}
+
+.dark .input {
+    width: 330px;
+    padding-left: 18px;
+    border: 1px solid rgb(191, 190, 190);
+    border-radius: 5px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    box-sizing: border-box;
+    background:#111111e9 ;
+    color: white;
+}
+.dark .input:hover {
+    border-radius: 5px;
+    border: 1px solid gainsboro;
+    color: rgb(255, 255, 255);
+}
+.dark p {
+    color: rgb(177, 177, 244);
+    text-decoration:underline solid rgb(150, 149, 151);
+    text-underline-offset:8px;
+}
+.dark a{
+    color: rgb(177, 177, 244);
+    text-decoration:underline solid rgb(150, 149, 151);
+    text-underline-offset:8px;
+}
+.dark .checkbox{
+    color: rgb(177, 177, 244);
+    text-decoration:underline solid rgb(150, 149, 151);
+    text-underline-offset:8px;
+}
+.dark .benvio {
+    width: 210px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(133, 138, 227);
+    cursor: pointer;
+}
+.dark .benvio:hover{
+    background: rgb(147, 144, 212);
+}
+
+@media (max-width:450px){
+    .dark .info-contenido{
+       width: 330px;
+       height: 480px;
+       margin: 100px auto;
+    }
+    .dark .input {
+        padding-left: 10px;
+        border: none;
+        border-radius: 5px;
+        font-weight: 300;
+        letter-spacing: 0.5px;
+        box-sizing: border-box;
+        width: 250px;
+    }
+    .dark p {
+        font-family:'Didact Gothic', sans-serif ;
+        font-size: 13px;
+    }
+    .dark a{
+        font-family:'Didact Gothic', sans-serif ;
+        font-size: 13px;
+    }
+    .dark .checkbox{
+        font-family:'Didact Gothic', sans-serif ;
+        font-size: 13px;
+    }
+    .dark .benvio {
+        width: 170px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        background-color: rgb(156, 156, 156);
+        cursor: pointer;
+    }
+   
+}
+
 @media (max-width:450px){
     .info-contenido{
        width: 330px;
@@ -116,50 +259,4 @@ a{
         cursor: pointer;
     }
    
-}
-
-#alerta-registro{
-    max-width: 600px;
-    width: 100%;
-}
-
-#alerta-saludo span{
-    text-align: center;
-    background-color: rgb(146, 196, 105);
-    border-radius: 18px;
-    padding: 15px;
-    color: rgb(56, 82, 41);
-    font-weight: bold;
-}
-
-/*@media screen and (max-width: 1000px) {
-    .info-contenido {
-        width: 70%;
-        margin-top: 48px;
-    }
-}
-@media  screen and {
-    
-}
-@media (max-width: 500px) {
-    .info-contenido {
-        width: 90%;
-        height: 800px;
-        
-    }
-    .input{
-        padding-left: 10px;
-        border: none;
-        border-radius: 1px;
-        font-weight: 100;
-        letter-spacing: 0.5px;
-        box-sizing: border-box;
-        width: 290px;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    .info-contenido {
-        height: 90%;
-    }
 }
