@@ -59,8 +59,7 @@ function leerDatosProducto(producto) {
 }
 
 function carritoHTML() {
-    let total = 0;
-    let totalOfProducts = 0;
+    
     vaciarCarrito();
 
     productosCarrito.forEach(producto => {
@@ -88,12 +87,8 @@ function carritoHTML() {
         </td>
         `
         contenedorCarrito.appendChild(nuevoProd);
-        total = total+parseInt(producto.cantidad*producto.precio.slice(1));
-        totalOfProducts = totalOfProducts+producto.cantidad;
 
     });
-    valorTotal.innerText = `$${total}`;
-    countProducts.innerText = `${totalOfProducts}`;
     
 }
 
