@@ -181,7 +181,32 @@ body.dark{
     background: rgb(147, 144, 212);
 }
 
-@media (max-width:450px){
+#div-alerta span{
+    background-color: red;
+}
+#div-alerta{
+    width: 60%;
+    max-width: 500px;
+}
+#div-saludo{
+    width: 60%;
+    max-width: 500px;
+}
+#div-saludo span{
+    background-color: rgb(181, 192, 240);
+}
+
+#div-alerta span{
+    text-align: center;
+    background-color: rgb(252, 61, 61);
+    border: 1px solid rgb(230, 28, 28);
+    border-radius: 18px;
+    padding: 20px 0;
+    color: rgb(255, 159, 159);
+    align-items: center;
+}
+@media
+ (max-width:450px){
     .dark .info-contenido{
        width: 330px;
        height: 480px;

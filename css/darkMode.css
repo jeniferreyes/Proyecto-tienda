@@ -49,6 +49,23 @@
 }
 
 /*-------------dark mode estilos-----------------*/
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    font-weight: 600;
+    color: rgb(189, 180, 255);
+    display: block;
+}
+.boton-1{
+    display: inline-block;
+    padding: 13px 45px;
+    border-radius: 20px;
+    background-color: rgb(130, 115, 151);
+    font-size: 16px;
+    color: white;
+    text-transform: capitalize;
+    box-shadow: 0px 0px 20px rgb(0, 0, 0);
+}
 body.dark{
     background: #131322e9;
 }
@@ -72,9 +89,11 @@ body.dark{
     color: rgb(113, 129, 170);
   }
   .dark .product-item {
+    border-top: 1px solid rgb(162, 185, 228);
     background-color: rgb(5, 4, 22);
   } 
-  .product-item a {
+  .dark .product-item a {
+
     background-color: #f00;
     color: #fff;
     border: none;
@@ -83,7 +102,7 @@ body.dark{
     cursor: pointer;
     background: linear-gradient(120deg, rgb(130, 148, 196) 0%, rgb(130, 115, 151) 100%);
     border-radius: 20px;
-    box-shadow: 2px 2px 10px rgba(68, 68, 68, 0.619);
+    box-shadow: 2px 2px 10px rgb(3, 0, 0);
 
 }
   /*sugerencias*/
@@ -122,4 +141,143 @@ body.dark{
 .dark footer {
     background-color: #000000;
     color: white;
+}
+.dark .carrito-compras:hover #carrito{
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    z-index: 1;
+    padding: 20px;
+    min-width: 400px;
+    background-color: rgba(77, 76, 125, 0.206);
+    backdrop-filter: blur(8px);
+    border-radius: 20px;
+}
+.dark th, td{
+    color: rgb(174, 187, 224);
+
+}
+.dark #lista-carrito tbody td{
+    color: rgb(245, 245, 245);
+}
+/* sugestions */
+.dark .suggestions{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.dark .suggestions form{
+    padding: 50px 55px 85px 55px;
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+    border-radius: 20px;
+    text-align: center;
+    width: 60%;
+    background-color: rgb(25, 22, 54);
+    
+}
+.dark .suggestions .input-group input{
+    color: rgb(141, 135, 163);
+
+}
+.dark .input-group{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+}
+.dark .suggestions form h2{
+    color: rgb(121, 121, 212);
+    font-size: 35px;
+    margin: 0;
+}
+.dark .suggestions form p{
+    font-size: 16px;
+    color: rgb(149, 147, 179);
+    margin-bottom: 20px;
+    
+}
+.dark .suggestions form .linea{
+    display: inline-block;
+    width: 30%;
+    height: 7px;
+    color: rgb(129, 129, 160);
+    
+    background: linear-gradient(
+        90deg,
+        rgb(153, 144, 187) 20%,
+        rgb(105, 95, 197) 100%
+    );
+}
+.dark .suggestions form label{
+    color: rgb(178, 180, 206);
+    font-size: 15px;
+    font-weight: 500px;
+    margin-bottom: 10px;
+
+}
+.dark .suggestions form input, .dark .txt-area{
+    padding: 17px 10px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    border: 2px solid rgb(68, 68, 68);
+    color: gray;
+    outline: none;
+    background-color: black;
+}
+
+.dark .suggestions form input::placeholder{
+    color: rgb(10, 0, 46);
+
+}
+.dark .form-txt, .txt-area{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.dark .txt-area{
+    font-family: 'Manrope', sans-serif;
+    ;
+}
+.dark .suggestions .btn{
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    border: 0px;
+    border-radius: 20px;
+    background: linear-gradient(
+        90deg, rgb(169, 142, 192) 0%, rgb(121, 152, 194) 100%
+        );
+        box-shadow: 0 0 20px rgb(0, 0, 0);
+    cursor: pointer;
+}
+@media(max-width:991px){
+    .dark body{
+        padding: 30px;
+    }
+    .dark .suggestions form{
+        padding: 50px 30px;
+        width: 100%;
+    }
+    .dark .suggestions input{
+        padding: 15px 10px;
+
+    }
+    .dark .switchDark{
+        margin-left: 18px;
+        margin-bottom: 18px;
+    }
+}
+
+/* Pie de página */
+.footer {
+background-color: #fff;
+color: #333;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 80px;
+padding: 0 20px;
+box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
 }

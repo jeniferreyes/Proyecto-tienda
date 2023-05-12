@@ -21,7 +21,8 @@ loginform.addEventListener('submit', (e)=>{
             alertaLogin.remove()
         }, 3000, );
         
-        return alertaLogin;
+        // return alertaLogin;
+        return alert('usuario o contraseña incorrectos')
     }
     const divSaludo = document.querySelector('#div-saludo')
     const saludo = document.createElement('span');
@@ -32,5 +33,6 @@ loginform.addEventListener('submit', (e)=>{
         window.location.href='index.html';
 
     },2000)
+    // alert("hola de vuelta");
 
 })

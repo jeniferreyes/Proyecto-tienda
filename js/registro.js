@@ -17,7 +17,7 @@ registroForm.addEventListener('submit', (e)=>{
     }
     usuario.push({nombre: nombre, correo: correo, contraseña: contraseña})
     localStorage.setItem('usuario', JSON.stringify(usuario))
-    alert('Usted se ha registrado')
+    alert('Usted se ha registrado');
     //login
     window.location.href ='login.html'
 })
